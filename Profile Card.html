@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Profile Card</title>
+        <style>
+            .profile-card{
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+            .card-container{
+                height: 500px;
+                width: 350px;
+                box-shadow: 012px 10px 20px black;
+                background-size: cover;
+                font-family: system-ui, sans-serif;
+                background-image: url();
+            }
+            .card{
+                height: 100%;
+                width: 100%;
+                top: 0;
+                background: linear-gradient(to top, rgb(0, 0, 0),
+                    rgba(21, 22, 22, 0.1));
+                color: whitesmoke;
+            }
+            .card-content{
+                margin-left: 20px;
+                bottom: 0;
+                position: absolute;
+                margin-bottom: 10px;
+                padding: 20px;
+            }
+            h2{
+                font-size: xx-large;
+                letter-spacing: 1px;
+                color: #0c0201;
+            }
+            h2 span{
+                color: #720d52;
+            }
+            .personal-details{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                color: aqua;
+            }
+            span{
+                margin-left: 60px;
+            }
+            .fa-envelope{
+                color: #720d52;
+                font-size: large;
+            }
+            .fa-envelope span{
+                margin-left: 12px;
+                color: #720d52;
+                font-size: large;
+                font-weight: 900;
+            }
+            .fa-envelope:hover{
+                cursor: pointer;
+                transition: .9s;
+                transform: scale(1.1);
+            }
+            .fa-phone{
+                color: black;
+                font-weight: 900;
+            }
+            .fa-phone:hover{
+                cursor: crosshair;
+                transition: .9s;
+                transform: scale(1.1);
+                color: #fcfcfc;
+            }
+            .fa-link{
+                color: rgb(0, 0, 175);
+            }
+            .fa-link span{
+                margin-left: 12px;
+                font-size: large;
+                color: #fdf497;
+                font-weight: 600;
+            }
+            .fa-link:hover{
+                cursor: grabbing;
+                transition: .9s;
+                transform: scale(1.1);
+                color: #fd5949;
+            }
+            .social{
+                margin-left:-10px;
+                margin-top: 30px;
+                display: flex;
+                margin-right: 10px;
+            }
+            .social a{
+                font-size: 13px;
+                text-decoration: none;
+                margin: 10px;
+                transition: 0.9s;
+            }
+            .social a:hover{
+                transform: scale(2.7);
+            }
+            .fa-linkedin{
+                color: rgb(252, 252, 253);
+                background: blue;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .fa-github{
+                color: black;
+                background: #fff;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .fa-twitter{
+                color: #fff;
+                background: aqua;
+                padding: 10px;
+                border-radius: 46px;
+            }
+            .fa-instagram{
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                padding: 10px;
+                border-radius: 46px;
+                color: #fff;
+                background: radial-gradient(circle at
+                30% 107%, #fdf497 0%, #fdf497 5%,
+                #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+            }
+            .fa-whatsapp{
+                color: #fff;
+                padding: 10px;
+                border-radius: 46px;
+                background: green;
+            }
+            .fa-codepen{
+                color: #fff;
+                background: black;
+                padding: 10px;
+                border-radius: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>SANDE<br/><span>ARITO</span></h2>
+                        <br/>
+                        <div>
+                            <i class="fa fa-envelope"><span>sandesamarito@gmail.com</span></i>
+                        </div>
+                        <br/>
+                        <div>
+                            <i class="fa fa-phone"><span>+254 748 291 553</span></i>
+                        </div>
+                        <br/>
+                        <div>
+                            <i class="fa fa-link"><span>https://sandesamarito.github.io</span></i>
+                        </div>
+                        <br/>
+                        <p class="personal-details">Front-End Web Developer<br/>
+                        <span>& IT Enthusiast.</span></p>
+                        <br/>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/i/sande-a-aa4817194" class="fa fa-linkedin"></a><!--LinkedIn-->
+                            <a href="https://github.com/sandesamarito/" class="fa fa-github"></a><!--Github-->
+                            <a href="https://twitter.com/sandearito?t=DF9wy1Li_8sZiZ8v2JPAVQ&s=09" class="fa fa-twitter"></a><!--Twitter-->
+                            <a href="https://www.instagram.com/sandearito/" class="fa fa-instagram"></a><!--Instagram-->
+                            <a href="https://wa.me/254748291553?
+                            text=Hello%2C%20I%20am%20Sande%20Samuel%20Arito%3B%20your%20IT%20assistant" class="fa fa-whatsapp"></a><!--WhatsApp-->
+                            <a href="#" class="fa fa-codepen"></a><!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
